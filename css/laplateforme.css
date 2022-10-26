@@ -114,15 +114,39 @@ nav ul li a {
     transform: rotateY(180deg);
 }
 
-#hero {
-    height: calc(100vh - 90px);
-    background-color: red;
+#hero * {
+    /* height: calc(100vh - 90px); */
+    color: #fff;
 }
 
 #hero section {
     width: 50%;
 }
 
-#hero img {
+#pictures img {
     width: 100%;
+}
+
+#inscription {
+    background-color: #336699;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#inscription .slogan {
+    font-weight: bold;
+    text-align: center;
+}
+
+.inscription_container {
+    font-family: Roboto-Regular;
+    font-size: 25px;
+    width: 60%;
+}
+
+.inscription_container p {
+    padding-bottom: 25px;
+
 }
