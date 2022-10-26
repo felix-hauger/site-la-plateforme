@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header, nav ul {
+    display: flex;
+}
+
+header {
+    height: 90px;
+    background-color: red;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    padding-right: 22px;
+}
+
+#logo {
+    height: 63px;
+}
+
+#search_icon {
+    float: right;
+}
