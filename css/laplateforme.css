@@ -1,20 +1,58 @@
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../font/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Thin;
+    src: url(../font/Roboto-Thin.ttf);
+}
+
+@font-face {
+    font-family: Robotoslab-Light;
+    src: url(../font/RobotoSlab-Light.ttf);
+}
+
+@font-face {
+    font-family: Robotoslab-Regular;
+    src: url(../font/RobotoSlab-Regular.ttf);
+}
+
+@font-face {
+    font-family: Robotoslab-Bold;
+    src: url(../font/RobotoSlab-Bold.ttf);
+}
+
+/* @font-face {
+    font-family: Robotoslab-Regular;
+    src: url(../font/RobotoSlab-Regular.ttf);
+} */
+
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-header, nav ul {
+a {
+    text-decoration: none;
+}
+
+header, nav ul, #hero {
     display: flex;
 }
 
 header {
     height: 90px;
-    background-color: red;
+    /* background-color: red; */
     align-items: center;
     justify-content: space-between;
 }
 
+nav {
+    padding-right: 30px;
+}
 
 nav ul {
     list-style: none;
@@ -22,12 +60,64 @@ nav ul {
 
 nav ul li {
     padding-right: 22px;
+    font-size: 14px;
+    font-family: Robotoslab-Bold;
+    font-weight: 200;
+}
+
+nav ul li a {
+    color: #666;
+    padding-right: 20px;
 }
 
 #logo {
     height: 63px;
 }
 
-#search_icon {
+.submenu {
+    position: relative;
+    /* padding-right: 20px; */
+}
+
+.submenu::after {
+    /* display: inline-block;
+    text-rendering: auto; */
+    -webkit-font-smoothing: antialiased;
+    /* font: var(--fa-font-solid); */
+    position: absolute;
+    right: 0;
+    top: 4px;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    content: "\f078";
+    font-size: 10px;
+}
+
+/* .search {
     float: right;
+} */
+
+.search::before {
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 6 Free";
+    display: inline-block;
+    vertical-align: middle;
+    color: #444;
+    font-size: 18px;
+    font-weight: 600;
+    content: "\f002";
+    transform: rotateY(180deg);
+}
+
+#hero {
+    height: calc(100vh - 90px);
+    background-color: red;
+}
+
+#hero section {
+    width: 50%;
+}
+
+#hero img {
+    width: 100%;
 }
