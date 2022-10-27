@@ -320,6 +320,10 @@ h2 {
     position: absolute;
 }
 
+#to_recruiters .fullwidth_wrapper > * {
+    margin-bottom: 40px;
+}
+
 #to_recruiters .article_box {
     justify-content: center;
     padding: 10px 40px 0 40px;
