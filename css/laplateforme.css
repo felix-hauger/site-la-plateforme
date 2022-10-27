@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: Roboto-Medium;
+    src: url(../font/Roboto-Medium.ttf);
+}
+
+@font-face {
     font-family: Roboto-Thin;
     src: url(../font/Roboto-Thin.ttf);
 }
@@ -28,6 +33,7 @@
     src: url(../font/RobotoSlab-Regular.ttf);
 } */
 
+/* GENERIC */
 
 * {
     box-sizing: border-box;
@@ -38,6 +44,8 @@
 a {
     text-decoration: none;
 }
+
+/* HEADER */
 
 header, nav ul, #hero {
     display: flex;
@@ -117,6 +125,8 @@ nav ul li a {
     transform: rotateY(180deg);
 }
 
+/* HERO */
+
 #hero {
     height: 915.5px;
     margin-bottom: 27px;
@@ -165,19 +175,23 @@ nav ul li a {
 
 }
 
-#inscription .container.button_container {
+.button_container {
     display: flex;
     justify-content: center;
 }
 
-#inscription .container a {
-    /* display: inline-block; */
+.button_container a {
     text-transform: uppercase;
+    font-family: Roboto-Regular;
+    border-radius: 100px;
+    letter-spacing: 1px;
+}
+
+#inscription .button_container a {
+    /* display: inline-block; */
     font-weight: 600;
     background-color: #ff2063;
     padding: 0.6em 1.2em;
-    border-radius: 100px;
-    letter-spacing: 1px;
     font-size: 22px;
     /* border: 2px solid;
     border-width: 2px;
@@ -190,4 +204,45 @@ nav ul li a {
     font-size: 12px;
     text-align: center;
     font-family: Roboto-Thin;
+}
+
+/* FORMATIONS LIST */
+
+h2 {
+    font-family: RobotoSlab-Regular;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    background-color: greenyellow;
+}
+
+#formations, #to_recruiters {
+    color: #336699;
+}
+
+.fullwidth_wrapper {
+    width: 89%;
+    max-width: 89%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: red;
+}
+
+#formations .articles_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+#formations .articles_box article {
+    height: 700px;
+    width: 30%;
+    background-color: lime;
+}
+
+.img_box img {
+    width: 150px;
+    display: block;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
