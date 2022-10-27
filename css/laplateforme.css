@@ -113,6 +113,10 @@ nav ul li a {
     transform: rotateY(180deg);
 }
 
+#hero {
+    height: 915.5px;
+}
+
 #hero * {
     /* height: calc(100vh - 90px); */
     color: #fff;
