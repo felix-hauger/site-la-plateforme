@@ -310,7 +310,7 @@ h2 {
     font-size: 16px;
 }
 
-#formations .button_container a::after {
+#formations .button_container a::after, #to_recruiters .button_container a::after {
     -webkit-font-smoothing: antialiased;
     font-family: "Font Awesome 6 Free";
     font-weight: 600;
@@ -318,6 +318,16 @@ h2 {
     margin-left: 0.3em;
     font-size: 0.7em;
     position: absolute;
+}
+
+/* SECTION DEDICATED TO COMPANIES */
+
+#to_recruiters {
+    padding: 54px 0;
+}
+
+#to_recruiters .fullwidth_wrapper {
+    padding-top: 27px;
 }
 
 #to_recruiters .fullwidth_wrapper > * {
