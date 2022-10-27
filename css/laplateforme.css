@@ -50,6 +50,10 @@ header {
     justify-content: space-between;
 }
 
+h1 {
+    display: none;
+}
+
 nav {
     padding-right: 30px;
 }
@@ -115,6 +119,7 @@ nav ul li a {
 
 #hero {
     height: 915.5px;
+    margin-bottom: 27px;
 }
 
 #hero * {
