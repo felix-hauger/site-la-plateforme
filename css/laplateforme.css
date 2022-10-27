@@ -39,6 +39,20 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Roboto-Regular;
+}
+
+body {
+    line-height: 1.7em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding-bottom: 10px;
+    line-height: 1em;
+}
+
+h2, h3, strong {
+    font-family: RobotoSlab-Regular;
 }
 
 a {
@@ -83,6 +97,8 @@ nav ul li:last-child {
 
 nav ul li a {
     color: #666;
+    font-family: Robotoslab-Regular;
+    font-weight: 600;
 }
 
 #logo {
@@ -154,6 +170,10 @@ nav ul li a {
     align-items: center;
 }
 
+#inscription p {
+    line-height: 1.2em;
+}
+
 #inscription strong, #inscription .slogan {
     font-family: RobotoSlab-Regular;
 }
@@ -170,9 +190,8 @@ nav ul li a {
     width: 60%;
 }
 
-#inscription .container p {
-    padding-bottom: 25px;
-
+p {
+    padding-bottom: 1em;
 }
 
 .button_container {
@@ -185,13 +204,21 @@ nav ul li a {
     font-family: Roboto-Regular;
     border-radius: 100px;
     letter-spacing: 1px;
+    transition: all 0.5s ease 0s;
+    padding: 0.6em 1.2em;
+    /* border: 2px solid; */
+    /* border-width: 10px; */
+}
+
+.button_container a:hover {
+    letter-spacing: 2px;
 }
 
 #inscription .button_container a {
     /* display: inline-block; */
     font-weight: 600;
+    /* border-color: #ff2063; */
     background-color: #ff2063;
-    padding: 0.6em 1.2em;
     font-size: 22px;
     /* border: 2px solid;
     border-width: 2px;
@@ -213,6 +240,8 @@ h2 {
     font-size: 40px;
     font-weight: 600;
     text-align: center;
+    padding-top: 27px;
+    padding-bottom: 54px;
     background-color: greenyellow;
 }
 
@@ -223,12 +252,15 @@ h2 {
 .fullwidth_wrapper {
     width: 89%;
     max-width: 89%;
+    /* padding-bottom: 27px; */
     margin-left: auto;
     margin-right: auto;
     background-color: red;
 }
 
 #formations .articles_box {
+    padding-top: 27px;
+    padding-bottom: 27px;
     display: flex;
     justify-content: space-between;
 }
@@ -237,12 +269,33 @@ h2 {
     height: 700px;
     width: 30%;
     background-color: lime;
+    font-size: 19px;
+    padding: 30px 40px;
+}
+
+#formations .articles_box article h3 {
+    font-size: 22px;
+}
+
+.img_box {
+    margin-bottom: 30px;
 }
 
 .img_box img {
-    width: 150px;
+    width: 100px;
     display: block;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
+}
+
+#formations .button_container {
+    margin-top: 9.27%;
+}
+
+#formations .button_container a {
+    background-color: #ffca4b;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
 }
