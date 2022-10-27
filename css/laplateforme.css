@@ -78,6 +78,7 @@ h1 {
 
 nav {
     padding-right: 30px;
+    line-height: 1em;
 }
 
 nav ul {
@@ -205,7 +206,6 @@ p {
     border-radius: 100px;
     letter-spacing: 1px;
     transition: all 0.5s ease 0s;
-    padding: 0.6em 1.2em;
     /* border: 2px solid; */
     /* border-width: 10px; */
 }
@@ -215,6 +215,7 @@ p {
 }
 
 #inscription .button_container a {
+    padding: 0.6em 1.2em;
     /* display: inline-block; */
     font-weight: 600;
     /* border-color: #ff2063; */
@@ -242,12 +243,13 @@ h2 {
     text-align: center;
     padding-top: 27px;
     padding-bottom: 54px;
-    background-color: greenyellow;
+    /* background-color: greenyellow; */
 }
 
 #formations, #to_recruiters {
     color: #336699;
 }
+
 
 .fullwidth_wrapper {
     width: 89%;
@@ -255,27 +257,35 @@ h2 {
     /* padding-bottom: 27px; */
     margin-left: auto;
     margin-right: auto;
-    background-color: red;
+    /* background-color: red; */
 }
 
-#formations .articles_box {
+#formations .articles_wrapper {
     padding-top: 27px;
     padding-bottom: 27px;
     display: flex;
     justify-content: space-between;
 }
 
-#formations .articles_box article {
-    height: 700px;
+#formations .article_box {
+    /* background-color: lime; */
     width: 30%;
-    background-color: lime;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 60px 0px rgba(71,74,182,0.12);
+    /* width: 100%; */
+}
+
+#formations .article_box article {
+    /* height: 700px; */
     font-size: 19px;
     padding: 30px 40px;
 }
 
-#formations .articles_box article h3 {
+#formations .articles_wrapper article h3 {
     font-size: 22px;
 }
+
 
 .img_box {
     margin-bottom: 30px;
@@ -291,11 +301,24 @@ h2 {
 
 #formations .button_container {
     margin-top: 9.27%;
+    margin-bottom: 30px;
+    position: relative;
 }
 
 #formations .button_container a {
+    padding: 1em 2em;
     background-color: #ffca4b;
     color: #fff;
     font-weight: 600;
     font-size: 16px;
+}
+
+#formations .button_container a::after {
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    content: "\f0da";
+    margin-left: 0.3em;
+    font-size: 0.7em;
+    position: absolute;
 }
