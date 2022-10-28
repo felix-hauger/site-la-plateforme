@@ -321,7 +321,7 @@ h2 {
     position: absolute;
 }
 
-/* SECTION DEDICATED TO COMPANIES */
+/***************** SECTION DEDICATED TO COMPANIES *******************/
 
 #to_recruiters {
     padding: 54px 0;
@@ -355,4 +355,36 @@ h2 {
 
 #to_recruiters h3 {
     font-size: 22px;
+}
+
+
+/* STORIES SECTION */
+
+#stories {
+    padding-top: 50px;
+    padding-bottom: 25px;
+    background-color: #ffa000;
+}
+
+#stories .text_box {
+    color: #fff;
+    width: 66%;
+    /* background-color: red; */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 27px 0;
+}
+
+#stories h2 {
+    padding: 0 0 27px 0;
+}
+
+#stories p {
+    text-align: center;
+    font-size: 18px;
+}
+
+#stories .videos {
+    display: flex;
+    justify-content: space-between;
 }
