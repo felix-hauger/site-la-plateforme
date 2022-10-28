@@ -28,10 +28,6 @@
     src: url(../font/RobotoSlab-Bold.ttf);
 }
 
-/* @font-face {
-    font-family: Robotoslab-Regular;
-    src: url(../font/RobotoSlab-Regular.ttf);
-} */
 
 /* GENERIC */
 
@@ -270,7 +266,7 @@ h2 {
 }
 
 #formations .article_box {
-    width: 30%;
+    width: 30.1%;
     flex-direction: column;
 }
 
@@ -303,8 +299,13 @@ h2 {
 }
 
 #formations .button_container a, #to_recruiters .button_container a {
-    padding: 1em 2em;
+    padding: 0.5em 1em;
     background-color: #ffca4b;
+    border: 2px solid;
+    border-color: #ffca4b;
+    border-width: 6px;
+    border-right-width: 24px;
+    border-left-width: 8px;
     color: #fff;
     font-weight: 600;
     font-size: 16px;
@@ -315,7 +316,7 @@ h2 {
     font-family: "Font Awesome 6 Free";
     font-weight: 600;
     content: "\f0da";
-    margin-left: 0.3em;
+    margin-left: 0.8em;
     font-size: 0.7em;
     position: absolute;
 }
