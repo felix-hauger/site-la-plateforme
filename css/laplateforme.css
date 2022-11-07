@@ -239,7 +239,6 @@ h2 {
     text-align: center;
     padding-top: 27px;
     padding-bottom: 54px;
-    /* background-color: greenyellow; */
 }
 
 .article_box {
@@ -346,7 +345,6 @@ h2 {
     width: 70%;
     align-self: center;
     font-size: 18px;
-    /* background-color: red; */
 }
 
 #to_recruiters .text_box {
@@ -369,7 +367,6 @@ h2 {
 #stories .text_box {
     color: #fff;
     width: 66%;
-    /* background-color: red; */
     margin-left: auto;
     margin-right: auto;
     padding: 27px 0;
@@ -387,4 +384,10 @@ h2 {
 #stories .videos {
     display: flex;
     justify-content: space-between;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #313131;
 }
